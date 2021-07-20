@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset='UTF-8'>
+        <title> Notas </title>
+        <link rel="stylesheet" type="text/css" href="aluno.css">
+        
+    </html>
+    <body  >
+        <header>
+            <div class="inicio">
+                <h1> Boletim</h1>
+                <nav>
+                    <ul>
+                        <li><a href="aluno.html">Boletim</a></li>
+                        <li><a href="tabelaaluno.html">Tabela</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        </br>
+        <main>
+            <form id='formulario'>
+                <div class="a1">
+                    <h2>Formulário de notas</h2>
+                    <label for="nome">Nome Completo: </label>
+                    <input type="text" name="nome" id="nome" class="input-padrao" required>
+                    <label for="nota1">Nota 1: </label>
+                    <input type="int" name="nota1" id="nota1" class="input-padrao">
+                    <label for="nota2">Nota 2: </label>
+                    <input type="int" name="nota2" id="nota2" class="input-padrao">
+                    <label for="nota3">Nota 3: </label>
+                    <input type="int" name="nota3" id="nota3" class="input-padrao">
+                    <input type="submit" name="enviar" value="Enviar" id="botao">
+                </div>
+
+            </form>
+            <table style="width:90%">
+                <thead>
+                    <tr id="tabela">
+                        <th>Nome do Aluno</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Nota 3</th>
+                        <th>Média Semestral</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela2">
+                    
+                </tbody>
+                
+            </table>
+        </main>
+
+        <footer>
+            <h2 >Boletim</h2>
+            <div class="fim">
+                <p>Copyrighy Boletim - 2021</p>
+            </div>
+        </footer>
+        
+        <script type="text/javascript" src="aluno.js"></script>
+        <script type="text/javascript" src="formulario.js"></script>
+    </body>
+</html>

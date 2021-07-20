@@ -1,0 +1,130 @@
+
+header {
+    background-color: rgb(144, 250, 215);
+    width: 100%
+}
+
+
+.inicio h1 {
+    color: white;
+    font-family: cursive;
+    display: inline-block;
+    margin: 40px 590px 0px;
+}
+
+
+.inicio {
+    position: relative;
+    text-align: end;
+    font-family: cursive;
+
+}
+nav li {
+    display: inline-block;
+    margin: 0px 20px 20px;
+}
+nav a {
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(17, 17, 182)
+}
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+form h2 {
+    text-align: center;
+    color: black;
+}
+.a1 label {
+    display: block;
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 100%;
+    border-color: aqua;
+    box-sizing: border-box;
+}
+
+.botao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 100%;
+    border-color: black;
+    box-sizing: border-box;
+    background: aqua;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background: white;
+    color: aqua
+}
+
+
+
+footer {
+    background-color: rgb(144, 250, 215);
+}
+footer h2 {
+    color: white;
+    font-family: cursive;
+    display: inline-block;
+    margin: 40px 30px 0px;
+}
+
+.fim  {
+    text-align: center;
+    color:black;
+    font-size: 16px;
+}
+
+table {
+    width: 600px;
+    margin: 50px 60px 70px;
+}
+
+table, th, td {
+    border: 1px solid aqua;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+
+}
+th {
+    text-align: center;
+}
+
+table {
+    border-spacing: 5px;
+    background: whitesmoke;
+    text-align: center;
+}
+
+caption{
+    color: aqua;
+    font-size: 40px;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+div {
+    display: inline;
+    margin-right: 30;
+}
