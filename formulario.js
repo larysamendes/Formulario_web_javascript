@@ -41,6 +41,26 @@ botao.addEventListener("click", function(event) {
 
     var tabelaAluno = document.querySelector('#tabela-aluno');
     tabelaAluno.appendChild(alunoTr);
+    
+    var valnota1 = validarnota1(n1);
+    var valnota2 = validarnota2(n2);
+    var valnota3 = validarnota3(n3);
+
+    if (!valnota1) {
+        nota1Td.textContent = 'nota inválida';
+        mediaTd.textContent = "";
+        situacaoTd.textContent = "";
+    }
+    if (!valnota2) {
+        nota2Td.textContent = 'nota inválida';
+        mediaTd.textContent = "";
+        situacaoTd.textContent = "";
+    }
+    if (!valnota3) {
+        nota3Td.textContent = 'nota inválida';
+        mediaTd.textContent = "";
+        situacaoTd.textContent = "";
+    }
 
   
 });
@@ -58,4 +78,28 @@ function final (media) {
         return "Prova final";
     }
 
+};
+
+function validarnota1(nota1) {
+    if (nota1 > 0 && nota1 < 10) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function validarnota2(nota2) {
+    if (nota2 > 0 && nota2 < 10) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function validarnota3(nota3) {
+    if (nota3 > 0 && nota3 < 10) {
+        return true;
+    } else {
+        return false;
+    }
 }
