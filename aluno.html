@@ -13,7 +13,6 @@
                 <nav>
                     <ul>
                         <li><a href="aluno.html">Boletim</a></li>
-                        <li><a href="tabelaaluno.html">Tabela</a></li>
                     </ul>
                 </nav>
             </div>
@@ -23,6 +22,7 @@
             <form id='formulario'>
                 <div class="a1">
                     <h2>Formulário de notas</h2>
+            
                     <label for="nome">Nome Completo: </label>
                     <input type="text" name="nome" id="nome" class="input-padrao" required>
                     <label for="nota1">Nota 1: </label>
@@ -32,8 +32,11 @@
                     <label for="nota3">Nota 3: </label>
                     <input type="int" name="nota3" id="nota3" class="input-padrao">
                     <input type="submit" name="enviar" value="Enviar" id="botao">
+                    <br>
+                    <label for="filtrar-tabela">Filtrar Aluno:</label>
+                    <input oninput="Pesquisar(this.value, 'i')" type="text" name='filtro' id='filtrar-tabela' placeholder="Digite o nome do aluno" class="input-padrao">
                 </div>
-
+            <span id="mensagem-erro"> </span>
             </form>
             <table style="width:90%">
                 <thead>
@@ -46,7 +49,7 @@
                         <th>Situação</th>
                     </tr>
                 </thead>
-                <tbody id="tabela2">
+                <tbody id="tabela-aluno">
                     
                 </tbody>
                 
@@ -62,5 +65,7 @@
         
         <script type="text/javascript" src="aluno.js"></script>
         <script type="text/javascript" src="formulario.js"></script>
+        <script type="text/javascript" src="remover.js"></script>
+        <script type="text/javascript" src="filtrar.js"></script>
     </body>
 </html>

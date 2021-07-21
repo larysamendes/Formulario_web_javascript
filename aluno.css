@@ -93,7 +93,14 @@ footer h2 {
     color:black;
     font-size: 16px;
 }
+.animacao {
+    opacity: 0;
+    transition: 0.4s;
+}
 
+.invisivel {
+    display: none;
+}
 table {
     width: 600px;
     margin: 50px 60px 70px;
